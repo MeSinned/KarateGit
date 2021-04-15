@@ -1,0 +1,42 @@
+19:14:28.932 karate.env system property was:  
+19:14:28.936 >> lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+19:14:29.230 request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 64
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+{"user":{"email":"equifax123@test.com","password":"equifax123"}}
+
+19:14:30.520 response time in milliseconds: 1288.78
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fbd302ce35ae5b-KIX
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 14 Apr 2021 09:14:30 GMT
+1 < ETag: W/"5430bcf6eccc56e6afaf6550d5955305"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=CakMGs4HCZLBkzxwVvCcyueEMyf3QmtaZM%2FgUcoOw0qHurRXWkMlaAwnu9crVqDokpwv36J%2FNPXPycfrjB0Q69xnqg9Oox4EuFwBBOr2u33sfv3OEixYoI3t%2FQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d9607c00d59403f092cf1f0779cfe85121618391670; expires=Fri, 14-May-21 09:14:30 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: f71771d2-3f8a-47d0-9b69-4a4e2e44b419
+1 < X-Runtime: 0.082309
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 09714235ba0000ae5b6d381000000001
+{"user":{"id":143994,"email":"equifax123@test.com","createdAt":"2021-02-22T03:08:16.359Z","updatedAt":"2021-02-22T03:08:16.366Z","username":"equifax123","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4"}}
+
+19:14:30.528 << lock released, cached callSingle: classpath:helpers/CreateToken.feature
+19:14:30.695 [print] mariette.renner
+19:14:30.697 [print] This is first scenario

@@ -1,0 +1,444 @@
+<testsuite failures="0" name="conduitApp/feature/Articles.feature" skipped="0" tests="7" time="20.643445">
+  <testcase classname="conduitApp.feature.Articles" name="Create a new article" time="1.212421">
+    <system-out>* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed</system-out>
+  </testcase>
+  <testcase classname="conduitApp.feature.Articles" name="Create and delete article" time="5.463318">
+    <system-out>* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def articleId = response.article.slug ................................... passed
+* def articleTitle = articleRequestBody.article.title ..................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title == articleRequestBody.article.title .. passed
+Given path 'articles',articleId ........................................... passed
+When method Delete ........................................................ passed
+Then status 200 ........................................................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title != articleRequestBody.article.title .. passed</system-out>
+  </testcase>
+  <testcase classname="conduitApp.feature.Articles" name="Conditional logic" time="4.624772">
+    <system-out>* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def articleId = response.article.slug ................................... passed
+* def articleTitle = articleRequestBody.article.title ..................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title == articleRequestBody.article.title .. passed
+Given path 'articles',articleId ........................................... passed
+When method Delete ........................................................ passed
+Then status 200 ........................................................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title != articleRequestBody.article.title .. passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def favoritesCount = response.articles[0].favoritesCount ................ passed
+* def article = response.articles[0] ...................................... passed
+* def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favoritesCount . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].favoritesCount == result ................... passed</system-out>
+  </testcase>
+  <testcase classname="conduitApp.feature.Articles" name="Retry call" time="2.543821">
+    <system-out>* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def articleId = response.article.slug ................................... passed
+* def articleTitle = articleRequestBody.article.title ..................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title == articleRequestBody.article.title .. passed
+Given path 'articles',articleId ........................................... passed
+When method Delete ........................................................ passed
+Then status 200 ........................................................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title != articleRequestBody.article.title .. passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def favoritesCount = response.articles[0].favoritesCount ................ passed
+* def article = response.articles[0] ...................................... passed
+* def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favoritesCount . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].favoritesCount == result ................... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* configure retry = { count: 10, interval: 5000 } ......................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+And retry until response.articles[0].favoritesCount == 1 .................. passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="conduitApp.feature.Articles" name="Sleep call" time="6.767039">
+    <system-out>* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def articleId = response.article.slug ................................... passed
+* def articleTitle = articleRequestBody.article.title ..................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title == articleRequestBody.article.title .. passed
+Given path 'articles',articleId ........................................... passed
+When method Delete ........................................................ passed
+Then status 200 ........................................................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title != articleRequestBody.article.title .. passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def favoritesCount = response.articles[0].favoritesCount ................ passed
+* def article = response.articles[0] ...................................... passed
+* def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favoritesCount . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].favoritesCount == result ................... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* configure retry = { count: 10, interval: 5000 } ......................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+And retry until response.articles[0].favoritesCount == 1 .................. passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* def sleep = function(pause){ java.lang.Thread.sleep(pause) } ............ passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+* eval sleep(5000) ........................................................ passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="conduitApp.feature.Articles" name="Number to string" time="0.013395">
+    <system-out>* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def articleId = response.article.slug ................................... passed
+* def articleTitle = articleRequestBody.article.title ..................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title == articleRequestBody.article.title .. passed
+Given path 'articles',articleId ........................................... passed
+When method Delete ........................................................ passed
+Then status 200 ........................................................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title != articleRequestBody.article.title .. passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def favoritesCount = response.articles[0].favoritesCount ................ passed
+* def article = response.articles[0] ...................................... passed
+* def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favoritesCount . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].favoritesCount == result ................... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* configure retry = { count: 10, interval: 5000 } ......................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+And retry until response.articles[0].favoritesCount == 1 .................. passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* def sleep = function(pause){ java.lang.Thread.sleep(pause) } ............ passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+* eval sleep(5000) ........................................................ passed
+Then status 200 ........................................................... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* def foo = 10 ............................................................ passed
+* def json = {"bar": #(foo+'')} ........................................... passed
+* match json == {"bar": '10'} ............................................. passed</system-out>
+  </testcase>
+  <testcase classname="conduitApp.feature.Articles" name="String to number" time="0.018679">
+    <system-out>* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+And match response.article.title == articleRequestBody.article.title ...... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given path 'articles' ..................................................... passed
+And request articleRequestBody ............................................ passed
+When method Post .......................................................... passed
+Then status 200 ........................................................... passed
+* def articleId = response.article.slug ................................... passed
+* def articleTitle = articleRequestBody.article.title ..................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title == articleRequestBody.article.title .. passed
+Given path 'articles',articleId ........................................... passed
+When method Delete ........................................................ passed
+Then status 200 ........................................................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].title != articleRequestBody.article.title .. passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* def favoritesCount = response.articles[0].favoritesCount ................ passed
+* def article = response.articles[0] ...................................... passed
+* def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favoritesCount . passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.articles[0].favoritesCount == result ................... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* configure retry = { count: 10, interval: 5000 } ......................... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+And retry until response.articles[0].favoritesCount == 1 .................. passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* def sleep = function(pause){ java.lang.Thread.sleep(pause) } ............ passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+* eval sleep(5000) ........................................................ passed
+Then status 200 ........................................................... passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* def foo = 10 ............................................................ passed
+* def json = {"bar": #(foo+'')} ........................................... passed
+* match json == {"bar": '10'} ............................................. passed
+* url apiUrl .............................................................. passed
+* def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json') . passed
+* def dataGenerator = Java.type('helpers.DataGenerator') .................. passed
+* set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title . passed
+* set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description . passed
+* set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body . passed
+* def foo = '10' .......................................................... passed
+* def json2 = {"bar": #(~~parseInt(foo))} ................................. passed
+* match json2 == {"bar": 10} .............................................. passed</system-out>
+  </testcase>
+</testsuite>

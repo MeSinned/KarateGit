@@ -1,0 +1,4298 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: conduitApp/feature/Articles.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Conduit Application</td>
+      <td>14 Apr 2021, 19:14</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">conduitApp/feature/Articles.feature</td>
+          <td      class="passed"    >103</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">103</td>
+
+          <td  class="passed"    >7</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td class="duration" data-value="21827085393">21.827</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1442878476.html">@parallel=false</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">conduitApp/feature/Articles.feature</span>
+
+
+</div>
+
+        <div class="description indention">Articles</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.144</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>19:14:28.950 karate.env system property was:  
+19:14:30.528 this thread waited 1576 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title</span>
+
+  <span class="lead-duration duration">0.085</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description</span>
+
+  <span class="lead-duration duration">0.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.067</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create a new article</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request articleRequestBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">1.063</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>19:14:30.703 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 119
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+{&quot;article&quot;:{&quot;tagList&quot;:[],&quot;title&quot;:&quot;Theomore&quot;,&quot;description&quot;:&quot;Qarth&quot;,&quot;body&quot;:&quot;Chuck Norris programs do not accept input.&quot;}}
+
+19:14:31.764 response time in milliseconds: 1059.57
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 63fbd30b9c2c6cce-SJC
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Apr 2021 09:14:31 GMT
+1 &lt; ETag: W/&quot;c0fd51843fdae085c97c4598fcde3f47&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=hvxVeWt0fE%2FBSIVIfnjUgKdBY6LfgxnnKoW9wgyMI8b%2BWAzx0O%2Bv4nZw90elQBRTwZy6tbEfPF609%2FP8AKRaXYjrfUJhExbsYx5YHRqQnrg48bQzrf15y5qQdQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d7a2b8da256864263a05e1456485e011f1618391671; expires=Fri, 14-May-21 09:14:31 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: b6783a59-50ec-4473-8a65-aa452d9ed5a8
+1 &lt; X-Runtime: 0.183757
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+1 &lt; cf-request-id: 0971423b3f00006ccec73c3000000001
+{&quot;article&quot;:{&quot;title&quot;:&quot;Theomore&quot;,&quot;slug&quot;:&quot;theomore-n5ro9j&quot;,&quot;body&quot;:&quot;Chuck Norris programs do not accept input.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Qarth&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.article.title == articleRequestBody.article.title</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.020</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>19:14:31.777 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">5.442</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Create and delete article</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request articleRequestBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">1.261</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>19:14:31.801 request:
+1 &gt; POST https://conduit.productionready.io/api/articles
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 149
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+{&quot;article&quot;:{&quot;tagList&quot;:[],&quot;title&quot;:&quot;Lady of the Leaves&quot;,&quot;description&quot;:&quot;Lorath&quot;,&quot;body&quot;:&quot;Chuck Norris can't test for equality because he has no equal.&quot;}}
+
+19:14:33.061 response time in milliseconds: 1258.93
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 63fbd311c9560a28-KIX
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Apr 2021 09:14:33 GMT
+1 &lt; ETag: W/&quot;7009cfde4e72b3f48c9710a1a750adbc&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=A6oAJAI01tbrm2eYvOPRsfjCvFjd9vfoJLjY6JHH4308sn183gUsmCfVdcce9Ux0LY75u%2BcB42%2BIdG3KJVwyPYtcLuLt2KSXmKFfbidn6I959HWy7bJXvQVJsw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d6209e41d5c8e66d419adbef18287758f1618391672; expires=Fri, 14-May-21 09:14:32 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 015193cb-ce3f-473a-a0ed-1d2429b475e2
+1 &lt; X-Runtime: 0.247008
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+1 &lt; cf-request-id: 0971423f2000000a281db73000000001
+{&quot;article&quot;:{&quot;title&quot;:&quot;Lady of the Leaves&quot;,&quot;slug&quot;:&quot;lady-of-the-leaves-qqsn3z&quot;,&quot;body&quot;:&quot;Chuck Norris can't test for equality because he has no equal.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:33.035Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:33.035Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Lorath&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleId = response.article.slug</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleTitle = articleRequestBody.article.title</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">1.631</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>19:14:33.066 request:
+2 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: __cfduid=d6209e41d5c8e66d419adbef18287758f1618391672
+2 &gt; Host: conduit.productionready.io
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+
+19:14:34.695 response time in milliseconds: 1628.25
+2 &lt; 200
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; CF-RAY: 63fbd319aa8b0a34-KIX
+2 &lt; Cache-Control: max-age=0, private, must-revalidate
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Wed, 14 Apr 2021 09:14:34 GMT
+2 &lt; ETag: W/&quot;fed6ca896317fa279ffeea81ceaeb783&quot;
+2 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+2 &lt; NEL: {&quot;max_age&quot;:604800,&quot;report_to&quot;:&quot;cf-nel&quot;}
+2 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=XuJ5CHsbarFsGeIparkF%2FzMCgVqKzkfKwmf7X0gRPT%2BH1GyRBT03PbmFFrCsN8kT8PdbHxD3gp5wRISX%2B%2BKHY68Iw%2BoB%2BibZN5cpGSFNsiQHiKsjQIrMyUEb5g%3D%3D&quot;}],&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; Status: 200 OK
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Origin
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Powered-By: Phusion Passenger 4.0.60
+2 &lt; X-Request-Id: 4b018328-cf5f-4f6c-8681-b2bb39e497d4
+2 &lt; X-Runtime: 0.631507
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+2 &lt; cf-request-id: 097142440d00000a342336e000000001
+{&quot;articles&quot;:[{&quot;title&quot;:&quot;Lady of the Leaves&quot;,&quot;slug&quot;:&quot;lady-of-the-leaves-qqsn3z&quot;,&quot;body&quot;:&quot;Chuck Norris can't test for equality because he has no equal.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:33.035Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:33.035Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Lorath&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;Theomore&quot;,&quot;slug&quot;:&quot;theomore-n5ro9j&quot;,&quot;body&quot;:&quot;Chuck Norris programs do not accept input.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Qarth&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;akjsjdnakjdn&quot;,&quot;slug&quot;:&quot;akjsjdnakjdn-adef5x&quot;,&quot;body&quot;:&quot;jhbsajfksadnlfksajl&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;idlsnafkasn&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;ajflafdf&quot;,&quot;slug&quot;:&quot;ajflafdf-hbszno&quot;,&quot;body&quot;:&quot;uusdafsadf\nsdafnsdf\ndsaf\nsd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;diusfnlasnflkj&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asindlsfdns&quot;,&quot;slug&quot;:&quot;asindlsfdns-6mjp86&quot;,&quot;body&quot;:&quot;yudabfadsf\nsaf\ndasjlfsadfljdjl\nbsdb\nj\nlbajd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;kjknaslkjf\nsafksafns\naf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;adbnkjas dkjs&quot;,&quot;slug&quot;:&quot;adbnkjas-dkjs-ozis2n&quot;,&quot;body&quot;:&quot;jnjandslanfsuaifniu\nafoidsfsdn]\nf\nsad]fnsa\nd'f]s\ndf&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;tagList&quot;:[&quot;jnldsf&quot;,&quot;saiudfnasn&quot;],&quot;description&quot;:&quot;jkdasjfbajds&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asfnjksabfj&quot;,&quot;slug&quot;:&quot;asfnjksabfj-ca9c34&quot;,&quot;body&quot;:&quot;uahsbdkjsabdbsah&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;],&quot;description&quot;:&quot;sajd asjkbf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;321&quot;,&quot;slug&quot;:&quot;321-ww7r12&quot;,&quot;body&quot;:&quot;312&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;3312&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:2},{&quot;title&quot;:&quot;article by me&quot;,&quot;slug&quot;:&quot;article-by-me-vmt2pg&quot;,&quot;body&quot;:&quot;-- whole content --\n\n// more content //\n\n**  some more content  **&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;,&quot;tag3&quot;],&quot;description&quot;:&quot;description by me\nanother line&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;3213&quot;,&quot;slug&quot;:&quot;3213-f9u9bf&quot;,&quot;body&quot;:&quot;321&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;321&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1}],&quot;articlesCount&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.articles[0].title == articleRequestBody.article.title</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles',articleId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Delete</span>
+
+  <span class="lead-duration duration">0.906</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>19:14:34.699 request:
+3 &gt; DELETE https://conduit.productionready.io/api/articles/lady-of-the-leaves-qqsn3z
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+3 &gt; Connection: Keep-Alive
+3 &gt; Cookie: __cfduid=d6209e41d5c8e66d419adbef18287758f1618391672
+3 &gt; Host: conduit.productionready.io
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+
+19:14:35.604 response time in milliseconds: 905.21
+3 &lt; 200
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; CF-RAY: 63fbd3228c87d18b-HKG
+3 &lt; Cache-Control: max-age=0, private, must-revalidate
+3 &lt; Connection: keep-alive
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Date: Wed, 14 Apr 2021 09:14:35 GMT
+3 &lt; ETag: W/&quot;99914b932bd37a50b983c5e7c90ae93b&quot;
+3 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+3 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+3 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=b%2FcI8RAKOyBAZLVCVG2ucwOVI%2Bt3M6wWMoMjTjtazX%2FTgVKkHqBlt1socdR9yPtv%2FdAnCPYVTIlwmp9zLzd6fM4TFyMFiOhVjZDh%2FbtD6YgBLENpLpITtubRJw%3D%3D&quot;}],&quot;max_age&quot;:604800}
+3 &lt; Server: cloudflare
+3 &lt; Status: 200 OK
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Vary: Origin
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-Powered-By: Phusion Passenger 4.0.60
+3 &lt; X-Request-Id: 52522b18-6e49-423b-993d-18a9a0f52f11
+3 &lt; X-Runtime: 0.052526
+3 &lt; X-XSS-Protection: 1; mode=block
+3 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+3 &lt; cf-request-id: 09714249900000d18be9acd000000001
+{}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">1.637</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>19:14:35.606 request:
+4 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+4 &gt; Accept-Encoding: gzip,deflate
+4 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+4 &gt; Connection: Keep-Alive
+4 &gt; Cookie: __cfduid=d6209e41d5c8e66d419adbef18287758f1618391672
+4 &gt; Host: conduit.productionready.io
+4 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+
+19:14:37.242 response time in milliseconds: 1635.35
+4 &lt; 200
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; CF-RAY: 63fbd329bb75fce9-KIX
+4 &lt; Cache-Control: max-age=0, private, must-revalidate
+4 &lt; Connection: keep-alive
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Date: Wed, 14 Apr 2021 09:14:37 GMT
+4 &lt; ETag: W/&quot;18dfefea6a6c9ee4543b7935cdaa7c29&quot;
+4 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+4 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+4 &lt; Report-To: {&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=emY10yC%2BA2W%2B%2BoZu8S6cXBkz%2BoA7bFtW6w9vcikYt0HIguZXOxh1GmotYOCXwk%2F%2BwPT6D%2FHgrnP2b0Dqs25yi%2FK8hTKq1uNEAlq5Fq%2FHoBG9E8ZvCcPxyN0lmA%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;}
+4 &lt; Server: cloudflare
+4 &lt; Status: 200 OK
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Vary: Origin
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-Frame-Options: SAMEORIGIN
+4 &lt; X-Powered-By: Phusion Passenger 4.0.60
+4 &lt; X-Request-Id: 4551fea0-9d6c-49fa-8c48-4e0d767461cb
+4 &lt; X-Runtime: 0.599108
+4 &lt; X-XSS-Protection: 1; mode=block
+4 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+4 &lt; cf-request-id: 0971424e120000fce92aa06000000001
+{&quot;articles&quot;:[{&quot;title&quot;:&quot;Theomore&quot;,&quot;slug&quot;:&quot;theomore-n5ro9j&quot;,&quot;body&quot;:&quot;Chuck Norris programs do not accept input.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Qarth&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;akjsjdnakjdn&quot;,&quot;slug&quot;:&quot;akjsjdnakjdn-adef5x&quot;,&quot;body&quot;:&quot;jhbsajfksadnlfksajl&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;idlsnafkasn&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;ajflafdf&quot;,&quot;slug&quot;:&quot;ajflafdf-hbszno&quot;,&quot;body&quot;:&quot;uusdafsadf\nsdafnsdf\ndsaf\nsd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;diusfnlasnflkj&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asindlsfdns&quot;,&quot;slug&quot;:&quot;asindlsfdns-6mjp86&quot;,&quot;body&quot;:&quot;yudabfadsf\nsaf\ndasjlfsadfljdjl\nbsdb\nj\nlbajd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;kjknaslkjf\nsafksafns\naf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;adbnkjas dkjs&quot;,&quot;slug&quot;:&quot;adbnkjas-dkjs-ozis2n&quot;,&quot;body&quot;:&quot;jnjandslanfsuaifniu\nafoidsfsdn]\nf\nsad]fnsa\nd'f]s\ndf&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;tagList&quot;:[&quot;jnldsf&quot;,&quot;saiudfnasn&quot;],&quot;description&quot;:&quot;jkdasjfbajds&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asfnjksabfj&quot;,&quot;slug&quot;:&quot;asfnjksabfj-ca9c34&quot;,&quot;body&quot;:&quot;uahsbdkjsabdbsah&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;],&quot;description&quot;:&quot;sajd asjkbf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;321&quot;,&quot;slug&quot;:&quot;321-ww7r12&quot;,&quot;body&quot;:&quot;312&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;3312&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:2},{&quot;title&quot;:&quot;article by me&quot;,&quot;slug&quot;:&quot;article-by-me-vmt2pg&quot;,&quot;body&quot;:&quot;-- whole content --\n\n// more content //\n\n**  some more content  **&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;,&quot;tag3&quot;],&quot;description&quot;:&quot;description by me\nanother line&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;3213&quot;,&quot;slug&quot;:&quot;3213-f9u9bf&quot;,&quot;body&quot;:&quot;321&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;321&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;This is a title&quot;,&quot;slug&quot;:&quot;this-is-a-title-epzyyo&quot;,&quot;body&quot;:&quot;This is text&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;This is a topic&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;asdqwer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1}],&quot;articlesCount&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.articles[0].title != articleRequestBody.article.title</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.012</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>19:14:37.247 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">5.795</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Conditional logic</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-19" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-20" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">1.913</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>19:14:37.261 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+
+19:14:39.174 response time in milliseconds: 1912.24
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 63fbd335ba74af21-KIX
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Apr 2021 09:14:39 GMT
+1 &lt; ETag: W/&quot;18dfefea6a6c9ee4543b7935cdaa7c29&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;max_age&quot;:604800,&quot;report_to&quot;:&quot;cf-nel&quot;}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=uNkD4I5RpY%2F89C5pmaR7XHf%2B8bHEPu026aTentmQH0%2BotRXTuFOoN5pm4EI23RW%2BDyVs5xijEluu4wiO9%2FsZAdb4wfa66bb7WFAHaCcYWUhfiAeDe5evh4c%2Btg%3D%3D&quot;}],&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d9f1aaffd5273b1b0763bab49b792d11b1618391678; expires=Fri, 14-May-21 09:14:38 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 3b242201-60b4-41b1-8944-ff18d8a8afb2
+1 &lt; X-Runtime: 0.603530
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+1 &lt; cf-request-id: 097142558e0000af212a1f8000000001
+{&quot;articles&quot;:[{&quot;title&quot;:&quot;Theomore&quot;,&quot;slug&quot;:&quot;theomore-n5ro9j&quot;,&quot;body&quot;:&quot;Chuck Norris programs do not accept input.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Qarth&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;akjsjdnakjdn&quot;,&quot;slug&quot;:&quot;akjsjdnakjdn-adef5x&quot;,&quot;body&quot;:&quot;jhbsajfksadnlfksajl&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;idlsnafkasn&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;ajflafdf&quot;,&quot;slug&quot;:&quot;ajflafdf-hbszno&quot;,&quot;body&quot;:&quot;uusdafsadf\nsdafnsdf\ndsaf\nsd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;diusfnlasnflkj&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asindlsfdns&quot;,&quot;slug&quot;:&quot;asindlsfdns-6mjp86&quot;,&quot;body&quot;:&quot;yudabfadsf\nsaf\ndasjlfsadfljdjl\nbsdb\nj\nlbajd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;kjknaslkjf\nsafksafns\naf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;adbnkjas dkjs&quot;,&quot;slug&quot;:&quot;adbnkjas-dkjs-ozis2n&quot;,&quot;body&quot;:&quot;jnjandslanfsuaifniu\nafoidsfsdn]\nf\nsad]fnsa\nd'f]s\ndf&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;tagList&quot;:[&quot;jnldsf&quot;,&quot;saiudfnasn&quot;],&quot;description&quot;:&quot;jkdasjfbajds&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asfnjksabfj&quot;,&quot;slug&quot;:&quot;asfnjksabfj-ca9c34&quot;,&quot;body&quot;:&quot;uahsbdkjsabdbsah&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;],&quot;description&quot;:&quot;sajd asjkbf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;321&quot;,&quot;slug&quot;:&quot;321-ww7r12&quot;,&quot;body&quot;:&quot;312&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;3312&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:2},{&quot;title&quot;:&quot;article by me&quot;,&quot;slug&quot;:&quot;article-by-me-vmt2pg&quot;,&quot;body&quot;:&quot;-- whole content --\n\n// more content //\n\n**  some more content  **&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;,&quot;tag3&quot;],&quot;description&quot;:&quot;description by me\nanother line&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;3213&quot;,&quot;slug&quot;:&quot;3213-f9u9bf&quot;,&quot;body&quot;:&quot;321&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;321&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;This is a title&quot;,&quot;slug&quot;:&quot;this-is-a-title-epzyyo&quot;,&quot;body&quot;:&quot;This is text&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;This is a topic&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;asdqwer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1}],&quot;articlesCount&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def favoritesCount = response.articles[0].favoritesCount</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def article = response.articles[0]</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def result = favoritesCount == 0 ? karate.call('classpath:helpers/AddLikes.feature', article).likesCount : favoritesCount</span>
+
+  <span class="lead-duration duration">1.195</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">helpers/AddLikes.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>{
+  &quot;tagList&quot;: [
+  ],
+  &quot;createdAt&quot;: &quot;2021-04-14T09:14:31.817Z&quot;,
+  &quot;author&quot;: {
+    &quot;image&quot;: &quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,
+    &quot;following&quot;: false,
+    &quot;bio&quot;: null,
+    &quot;username&quot;: &quot;equifax123&quot;
+  },
+  &quot;description&quot;: &quot;Qarth&quot;,
+  &quot;title&quot;: &quot;Theomore&quot;,
+  &quot;body&quot;: &quot;Chuck Norris programs do not accept input.&quot;,
+  &quot;favoritesCount&quot;: 0,
+  &quot;slug&quot;: &quot;theomore-n5ro9j&quot;,
+  &quot;updatedAt&quot;: &quot;2021-04-14T09:14:31.817Z&quot;,
+  &quot;favorited&quot;: false
+}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'articles', slug, 'favorite'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">1.178</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>19:14:39.199 request:
+1 &gt; POST https://conduit.productionready.io/api/articles/theomore-n5ro9j/favorite
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Cookie: __cfduid=d9f1aaffd5273b1b0763bab49b792d11b1618391678
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+{}
+
+19:14:40.375 response time in milliseconds: 1176.64
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 63fbd3402ff80a1c-KIX
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Apr 2021 09:14:40 GMT
+1 &lt; ETag: W/&quot;302a1191334ff59bae30c6c62569786f&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;max_age&quot;:604800,&quot;report_to&quot;:&quot;cf-nel&quot;}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=KwPSw82IDpY1cLtvy1DMz0Bm6CFMN5WwDJejbYyN4KyStK1Ghyu47%2F0aWX0ueZu3sZX6R%2BL6LSQQpX8YnY0SqtcPKCXkEFp7Ys%2F0LOhaVrWtOvQwRqXoWL0dyg%3D%3D&quot;}],&quot;max_age&quot;:604800,&quot;group&quot;:&quot;cf-nel&quot;}
+1 &lt; Server: cloudflare
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: 8d92a546-95e1-4faf-a1ad-0eeefc8a001e
+1 &lt; X-Runtime: 0.153921
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+1 &lt; cf-request-id: 0971425c1900000a1c851e5000000001
+{&quot;article&quot;:{&quot;title&quot;:&quot;Theomore&quot;,&quot;slug&quot;:&quot;theomore-n5ro9j&quot;,&quot;body&quot;:&quot;Chuck Norris programs do not accept input.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Qarth&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1}}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def likesCount = response.article.favoritesCount</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">1.493</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>19:14:40.379 request:
+2 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: __cfduid=d9f1aaffd5273b1b0763bab49b792d11b1618391678
+2 &gt; Host: conduit.productionready.io
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+
+19:14:41.872 response time in milliseconds: 1485.49
+2 &lt; 200
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; CF-RAY: 63fbd347cdf1024a-SJC
+2 &lt; Cache-Control: max-age=0, private, must-revalidate
+2 &lt; Connection: keep-alive
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Date: Wed, 14 Apr 2021 09:14:41 GMT
+2 &lt; ETag: W/&quot;b7848b2c3615f0fab5303c469963fe0e&quot;
+2 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+2 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=DhC5PE1QgP1GQL2KWzZXug2cWqrufCkNJ%2FPbTU59Jp6QSlZiXTlqqKCBhLCfYv%2Fe3OCqm27J8TDbZ6OunbQgs85zHoq4Vs%2BIFrvBUAFpuE6eKDJ8oPkTXuhXjw%3D%3D&quot;}],&quot;max_age&quot;:604800,&quot;group&quot;:&quot;cf-nel&quot;}
+2 &lt; Server: cloudflare
+2 &lt; Status: 200 OK
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Origin
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Powered-By: Phusion Passenger 4.0.60
+2 &lt; X-Request-Id: 6feb5799-e4c1-4572-ad28-dfbab879d1f0
+2 &lt; X-Runtime: 0.676498
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+2 &lt; cf-request-id: 09714260e10000024a13210000000001
+{&quot;articles&quot;:[{&quot;title&quot;:&quot;Theomore&quot;,&quot;slug&quot;:&quot;theomore-n5ro9j&quot;,&quot;body&quot;:&quot;Chuck Norris programs do not accept input.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Qarth&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;akjsjdnakjdn&quot;,&quot;slug&quot;:&quot;akjsjdnakjdn-adef5x&quot;,&quot;body&quot;:&quot;jhbsajfksadnlfksajl&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;idlsnafkasn&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;ajflafdf&quot;,&quot;slug&quot;:&quot;ajflafdf-hbszno&quot;,&quot;body&quot;:&quot;uusdafsadf\nsdafnsdf\ndsaf\nsd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;diusfnlasnflkj&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asindlsfdns&quot;,&quot;slug&quot;:&quot;asindlsfdns-6mjp86&quot;,&quot;body&quot;:&quot;yudabfadsf\nsaf\ndasjlfsadfljdjl\nbsdb\nj\nlbajd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;kjknaslkjf\nsafksafns\naf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;adbnkjas dkjs&quot;,&quot;slug&quot;:&quot;adbnkjas-dkjs-ozis2n&quot;,&quot;body&quot;:&quot;jnjandslanfsuaifniu\nafoidsfsdn]\nf\nsad]fnsa\nd'f]s\ndf&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;tagList&quot;:[&quot;jnldsf&quot;,&quot;saiudfnasn&quot;],&quot;description&quot;:&quot;jkdasjfbajds&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asfnjksabfj&quot;,&quot;slug&quot;:&quot;asfnjksabfj-ca9c34&quot;,&quot;body&quot;:&quot;uahsbdkjsabdbsah&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;],&quot;description&quot;:&quot;sajd asjkbf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;321&quot;,&quot;slug&quot;:&quot;321-ww7r12&quot;,&quot;body&quot;:&quot;312&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;3312&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:2},{&quot;title&quot;:&quot;article by me&quot;,&quot;slug&quot;:&quot;article-by-me-vmt2pg&quot;,&quot;body&quot;:&quot;-- whole content --\n\n// more content //\n\n**  some more content  **&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;,&quot;tag3&quot;],&quot;description&quot;:&quot;description by me\nanother line&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;3213&quot;,&quot;slug&quot;:&quot;3213-f9u9bf&quot;,&quot;body&quot;:&quot;321&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;321&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;This is a title&quot;,&quot;slug&quot;:&quot;this-is-a-title-epzyyo&quot;,&quot;body&quot;:&quot;This is text&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;This is a topic&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;asdqwer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1}],&quot;articlesCount&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.articles[0].favoritesCount == result</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.013</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-25" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-26" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-27">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-27" class="collapse collapsable-details">
+        <pre>19:14:41.876 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">2.530</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-28">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Retry call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-28" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-29" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure retry = { count: 10, interval: 5000 }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">retry until response.articles[0].favoritesCount == 1</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">2.529</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>19:14:41.891 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+
+19:14:44.417 response time in milliseconds: 2523.94
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 63fbd356ae8ddb18-KIX
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Apr 2021 09:14:44 GMT
+1 &lt; ETag: W/&quot;b7848b2c3615f0fab5303c469963fe0e&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;max_age&quot;:604800,&quot;report_to&quot;:&quot;cf-nel&quot;}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=MyjeeRFZEAVz6zOwzOZbH4FmpQQoouF38sKb2gpu5lWQq7sFAqm0EJifIJJMyub0dP7ZeMBoEEPqgSTp4yv5h%2B63uBZW631M57Qjb3yle8QXqZd5e174PCqPlQ%3D%3D&quot;}],&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d6f495ee962d0f1a47f91da3eed3736b91618391683; expires=Fri, 14-May-21 09:14:43 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: b9b647b2-a0d7-43ce-8a3d-961b6b3ccad6
+1 &lt; X-Runtime: 0.571192
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+1 &lt; cf-request-id: 0971426a2d0000db18590de000000001
+{&quot;articles&quot;:[{&quot;title&quot;:&quot;Theomore&quot;,&quot;slug&quot;:&quot;theomore-n5ro9j&quot;,&quot;body&quot;:&quot;Chuck Norris programs do not accept input.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Qarth&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;akjsjdnakjdn&quot;,&quot;slug&quot;:&quot;akjsjdnakjdn-adef5x&quot;,&quot;body&quot;:&quot;jhbsajfksadnlfksajl&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;idlsnafkasn&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;ajflafdf&quot;,&quot;slug&quot;:&quot;ajflafdf-hbszno&quot;,&quot;body&quot;:&quot;uusdafsadf\nsdafnsdf\ndsaf\nsd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;diusfnlasnflkj&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asindlsfdns&quot;,&quot;slug&quot;:&quot;asindlsfdns-6mjp86&quot;,&quot;body&quot;:&quot;yudabfadsf\nsaf\ndasjlfsadfljdjl\nbsdb\nj\nlbajd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;kjknaslkjf\nsafksafns\naf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;adbnkjas dkjs&quot;,&quot;slug&quot;:&quot;adbnkjas-dkjs-ozis2n&quot;,&quot;body&quot;:&quot;jnjandslanfsuaifniu\nafoidsfsdn]\nf\nsad]fnsa\nd'f]s\ndf&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;tagList&quot;:[&quot;jnldsf&quot;,&quot;saiudfnasn&quot;],&quot;description&quot;:&quot;jkdasjfbajds&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asfnjksabfj&quot;,&quot;slug&quot;:&quot;asfnjksabfj-ca9c34&quot;,&quot;body&quot;:&quot;uahsbdkjsabdbsah&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;],&quot;description&quot;:&quot;sajd asjkbf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;321&quot;,&quot;slug&quot;:&quot;321-ww7r12&quot;,&quot;body&quot;:&quot;312&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;3312&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:2},{&quot;title&quot;:&quot;article by me&quot;,&quot;slug&quot;:&quot;article-by-me-vmt2pg&quot;,&quot;body&quot;:&quot;-- whole content --\n\n// more content //\n\n**  some more content  **&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;,&quot;tag3&quot;],&quot;description&quot;:&quot;description by me\nanother line&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;3213&quot;,&quot;slug&quot;:&quot;3213-f9u9bf&quot;,&quot;body&quot;:&quot;321&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;321&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;This is a title&quot;,&quot;slug&quot;:&quot;this-is-a-title-epzyyo&quot;,&quot;body&quot;:&quot;This is text&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;This is a topic&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;asdqwer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1}],&quot;articlesCount&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.021</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>19:14:44.424 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.011</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">6.745</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Sleep call</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-34" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-35" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def sleep = function(pause){ java.lang.Thread.sleep(pause) }</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params { limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">1.725</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>19:14:44.453 request:
+1 &gt; GET https://conduit.productionready.io/api/articles?limit=10&amp;offset=0
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: conduit.productionready.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+
+19:14:46.177 response time in milliseconds: 1723.59
+1 &lt; 200
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 63fbd3635d9d213f-SJC
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Wed, 14 Apr 2021 09:14:46 GMT
+1 &lt; ETag: W/&quot;b7848b2c3615f0fab5303c469963fe0e&quot;
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;max_age&quot;:604800,&quot;report_to&quot;:&quot;cf-nel&quot;}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=QTQHodX%2FGku%2F2TvzIQ7oQY3DnrV3JgfheNE7AHD4IhQBmj4jK93sQ7IqW5Zie4ryqhoz02P4UBlf3PDK24UFyZT%2FrInK1PckueaIHgW0%2BNEK3SNjjTa%2F6pqllw%3D%3D&quot;}],&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=dfdbf32bbd8cf80f6bacf51571edf19651618391685; expires=Fri, 14-May-21 09:14:45 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 &lt; Status: 200 OK
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Powered-By: Phusion Passenger 4.0.60
+1 &lt; X-Request-Id: bd4ed164-d704-48d5-be4f-3e717a6786cb
+1 &lt; X-Runtime: 0.566655
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+1 &lt; cf-request-id: 09714272120000213fb3245000000001
+{&quot;articles&quot;:[{&quot;title&quot;:&quot;Theomore&quot;,&quot;slug&quot;:&quot;theomore-n5ro9j&quot;,&quot;body&quot;:&quot;Chuck Norris programs do not accept input.&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:14:31.817Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;Qarth&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;equifax123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;akjsjdnakjdn&quot;,&quot;slug&quot;:&quot;akjsjdnakjdn-adef5x&quot;,&quot;body&quot;:&quot;jhbsajfksadnlfksajl&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:58.258Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;idlsnafkasn&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;ajflafdf&quot;,&quot;slug&quot;:&quot;ajflafdf-hbszno&quot;,&quot;body&quot;:&quot;uusdafsadf\nsdafnsdf\ndsaf\nsd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:04:13.958Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;diusfnlasnflkj&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asindlsfdns&quot;,&quot;slug&quot;:&quot;asindlsfdns-6mjp86&quot;,&quot;body&quot;:&quot;yudabfadsf\nsaf\ndasjlfsadfljdjl\nbsdb\nj\nlbajd&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:02:37.992Z&quot;,&quot;tagList&quot;:[&quot;Tag&quot;],&quot;description&quot;:&quot;kjknaslkjf\nsafksafns\naf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;adbnkjas dkjs&quot;,&quot;slug&quot;:&quot;adbnkjas-dkjs-ozis2n&quot;,&quot;body&quot;:&quot;jnjandslanfsuaifniu\nafoidsfsdn]\nf\nsad]fnsa\nd'f]s\ndf&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:51.714Z&quot;,&quot;tagList&quot;:[&quot;jnldsf&quot;,&quot;saiudfnasn&quot;],&quot;description&quot;:&quot;jkdasjfbajds&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;asfnjksabfj&quot;,&quot;slug&quot;:&quot;asfnjksabfj-ca9c34&quot;,&quot;body&quot;:&quot;uahsbdkjsabdbsah&quot;,&quot;createdAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T09:00:00.970Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;],&quot;description&quot;:&quot;sajd asjkbf&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0},{&quot;title&quot;:&quot;321&quot;,&quot;slug&quot;:&quot;321-ww7r12&quot;,&quot;body&quot;:&quot;312&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:56:46.544Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;3312&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:2},{&quot;title&quot;:&quot;article by me&quot;,&quot;slug&quot;:&quot;article-by-me-vmt2pg&quot;,&quot;body&quot;:&quot;-- whole content --\n\n// more content //\n\n**  some more content  **&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:56.659Z&quot;,&quot;tagList&quot;:[&quot;tag1&quot;,&quot;tag2&quot;,&quot;tag3&quot;],&quot;description&quot;:&quot;description by me\nanother line&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;AshutoshDumiyan&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;3213&quot;,&quot;slug&quot;:&quot;3213-f9u9bf&quot;,&quot;body&quot;:&quot;321&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:54:38.610Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;321&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;david-xxx&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1},{&quot;title&quot;:&quot;This is a title&quot;,&quot;slug&quot;:&quot;this-is-a-title-epzyyo&quot;,&quot;body&quot;:&quot;This is text&quot;,&quot;createdAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;updatedAt&quot;:&quot;2021-04-14T08:47:58.082Z&quot;,&quot;tagList&quot;:[],&quot;description&quot;:&quot;This is a topic&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;asdqwer&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://static.productionready.io/images/smiley-cyrus.jpg&quot;,&quot;following&quot;:false},&quot;favorited&quot;:false,&quot;favoritesCount&quot;:1}],&quot;articlesCount&quot;:500}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">eval sleep(5000)</span>
+
+  <span class="lead-duration duration">5.014</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.010</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-37" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-38" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-39" class="collapse collapsable-details">
+        <pre>19:14:51.196 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.002</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-40">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Number to string</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-40" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-41">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-41" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def foo = 10</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def json = {&quot;bar&quot;: #(foo+'')}</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match json == {&quot;bar&quot;: '10'}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.012</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-42">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-42" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>19:14:51.212 karate.env system property was:</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dataGenerator = Java.type('helpers.DataGenerator')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.title = dataGenerator.getRandomArticleValues().title</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.description = dataGenerator.getRandomArticleValues().description</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">set articleRequestBody.article.body = dataGenerator.getRandomArticleValues().body</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4075208210.html">@debug</a>
+</div>
+
+
+  <span class="lead-duration duration">0.006</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-45">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">String to number</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-45" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-46">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-46" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def foo = '10'</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def json2 = {&quot;bar&quot;: #(~~parseInt(foo))}</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match json2 == {&quot;bar&quot;: 10}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

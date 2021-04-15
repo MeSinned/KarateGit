@@ -1,0 +1,77 @@
+19:14:28.942 karate.env system property was:  
+19:14:30.529 this thread waited 1585 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+19:14:30.745 request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 > Connection: Keep-Alive
+1 > Content-Length: 84
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+{"user":{"email":"troy27@test.com","password":"equifax789","username":"equifax789"}}
+
+19:14:31.776 response time in milliseconds: 1030.44
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fbd30b7fcbdb24-KIX
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 14 Apr 2021 09:14:31 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"max_age":604800,"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=RJwaoUqxrpLEeir7Dgj1nQqBP4kLV60e0SLFZD3Qf8CWMZ68qpxXZpC0D%2BUHelSIZBY5JHX7yI6WXM9wNOSuQFSqkNsJlrWudYLnxjCdNDKbUM9e3Yo59p4QnA%3D%3D"}]}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=df147752a09441c8d73d1a22f00ba44281618391671; expires=Fri, 14-May-21 09:14:31 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 422 Unprocessable Entity
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 838d1d9b-32b2-43a7-b0fe-45373203e657
+1 < X-Runtime: 0.099734
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0971423b2b0000db24cd821000000001
+{"errors":{"username":["has already been taken"]}}
+
+19:14:31.780 karate.env system property was:  
+19:14:31.804 request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 > Connection: Keep-Alive
+1 > Content-Length: 94
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+{"user":{"email":"equifax789@test.com","password":"equifax789","username":"gilberto.witting"}}
+
+19:14:32.960 response time in milliseconds: 1150.56
+1 < 422
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fbd31219d1fbe8-KIX
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 14 Apr 2021 09:14:33 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=nXaSocPLpgSVt6H5rv1S53277IsSeJn6OYNx82MaY7qYlRQyDo1sd%2FHJ7wwI7BbNHqHYkMtnmFrOrCxbxYUwRi%2FQdcLyMxRWQ672HViZ8zmxff3CP0wgvChucQ%3D%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=ddb88d8ee96e85da6323031ff43d13ae91618391672; expires=Fri, 14-May-21 09:14:32 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 422 Unprocessable Entity
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 7ae5e34e-bc1d-4b93-97c0-de9f867011bc
+1 < X-Runtime: 0.092832
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0971423f4f0000fbe848043000000001
+{"errors":{"email":["has already been taken"]}}
+

@@ -1,0 +1,36 @@
+19:14:28.935 karate.env system property was:  
+19:14:30.529 this thread waited 1592 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+19:14:30.550 request:
+1 > GET https://conduit.productionready.io/api/tags
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 > Connection: Keep-Alive
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+
+19:14:33.204 response time in milliseconds: 2652.07
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fbd3088bfc32c1-HKG
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 14 Apr 2021 09:14:33 GMT
+1 < ETag: W/"945e3ef4d51ec98aa9a30176d67c595e"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=mKGVLiO%2B6n17oqEIm0en6FxvhrpYZuVNlfSB9XifvUIT2lgN7%2FHfRnusCK2F4BS98x3FuUFLtYcvYk6DZwd3af4G64sGOmSwLNdvFLVkdLs0bZ8BD5u9oo8E0A%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=df0bff2c8f141820a23b81c931e596bbe1618391671; expires=Fri, 14-May-21 09:14:31 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 207267e6-c46a-4aaa-ab0b-4a7652d10227
+1 < X-Runtime: 1.849664
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0971423954000032c19b38a000000001
+{"tags":["‌","‌‌","‌‌‌","‌‌‌‌","‌‌‌‌‌‌‌‌","‌‌‌‌‌","‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌","‌‌‌‌‌‌‌‌‌‌‌","‌‌‌‌‌‌","HuManIty","Hu‌Man‌Ity","Gandhi","HITLER","SIDA","BlackLivesMatter","Black‌Lives‌Matter","test","dragons","butt"]}
+

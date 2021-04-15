@@ -1,0 +1,26 @@
+<testsuite failures="0" name="conduitApp/feature/HomePage.feature" skipped="0" tests="2" time="6.222397">
+  <testcase classname="conduitApp.feature.HomePage" name="Get all tags" time="2.661879">
+    <system-out>Given url apiUrl .......................................................... passed
+Given path 'tags' ......................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.tags == "#array" ....................................... passed
+And match each response.tags == "#string" ................................. passed</system-out>
+  </testcase>
+  <testcase classname="conduitApp.feature.HomePage" name="Get 10 articles from page" time="3.560519">
+    <system-out>Given url apiUrl .......................................................... passed
+Given path 'tags' ......................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.tags == "#array" ....................................... passed
+And match each response.tags == "#string" ................................. passed
+Given url apiUrl .......................................................... passed
+* def timeValidator = read('classpath:helpers/timeValidator.js') .......... passed
+Given params { limit: 10, offset: 0} ...................................... passed
+Given path 'articles' ..................................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == { "articles": "#[10]", "articlesCount": 500} ........ passed
+And match each response.articles == ....................................... passed</system-out>
+  </testcase>
+</testsuite>

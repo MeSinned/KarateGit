@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = new vis.DataSet([{"id":1,"content":"pool-1-thread-1"},{"id":2,"content":"ForkJoinPool-1-worker-5"},{"id":3,"content":"ForkJoinPool-1-worker-11"},{"id":4,"content":"ForkJoinPool-1-worker-7"},{"id":5,"content":"ForkJoinPool-1-worker-9"},{"id":6,"content":"ForkJoinPool-1-worker-3"},{"id":7,"content":"pool-1-thread-4"}]);
+var items = new vis.DataSet([{"id":1,"group":1,"content":"Articles[1:13]","start":2292,"end":3506,"title":"Articles[1:13] 10:00:02.292-10:00:03.506 Create a new article"},{"id":2,"group":1,"content":"Articles[2:20]","start":3515,"end":8980,"title":"Articles[2:20] 10:00:03.515-10:00:08.980 Create and delete article"},{"id":3,"group":1,"content":"Articles[3:44]","start":8984,"end":13609,"title":"Articles[3:44] 10:00:08.984-10:00:13.609 Conditional logic"},{"id":4,"group":1,"content":"Articles[4:62]","start":13613,"end":16158,"title":"Articles[4:62] 10:00:13.613-10:00:16.158 Retry call"},{"id":5,"group":1,"content":"Articles[5:71]","start":16162,"end":22930,"title":"Articles[5:71] 10:00:16.162-10:00:22.930 Sleep call"},{"id":6,"group":1,"content":"Articles[6:80]","start":22933,"end":22946,"title":"Articles[6:80] 10:00:22.933-10:00:22.946 Number to string"},{"id":7,"group":1,"content":"Articles[7:86]","start":22950,"end":22969,"title":"Articles[7:86] 10:00:22.950-10:00:22.969 String to number"},{"id":8,"group":2,"content":"HomePage[1:6]","start":2282,"end":4945,"title":"HomePage[1:6] 10:00:02.282-10:00:04.945 Get all tags"},{"id":9,"group":3,"content":"HomePage[2:16]","start":2274,"end":5835,"title":"HomePage[2:16] 10:00:02.274-10:00:05.835 Get 10 articles from page"},{"id":10,"group":4,"content":"Hooks[1:22]","start":2275,"end":2435,"title":"Hooks[1:22] 10:00:02.275-10:00:02.435 First scenario"},{"id":11,"group":5,"content":"Hooks[2:26]","start":2285,"end":2435,"title":"Hooks[2:26] 10:00:02.285-10:00:02.435 Second scenario"},{"id":12,"group":6,"content":"SignUp[1:11]","start":2278,"end":3751,"title":"SignUp[1:11] 10:00:02.278-10:00:03.751 New user Sign Up"},{"id":13,"group":7,"content":"SignUp[2.1:60]","start":2289,"end":3514,"title":"SignUp[2.1:60] 10:00:02.289-10:00:03.514 Validate Sign Up error messages email"},{"id":14,"group":7,"content":"SignUp[2.2:61]","start":3517,"end":4697,"title":"SignUp[2.2:61] 10:00:03.517-10:00:04.697 Validate Sign Up error messages email"}]);
+var container = document.getElementById('visualization');
+var timeline = new vis.Timeline(container);
+timeline.setOptions({ groupOrder: 'content' });
+timeline.setGroups(groups);
+timeline.setItems(items);
+</script>
+  </body>
+</html>

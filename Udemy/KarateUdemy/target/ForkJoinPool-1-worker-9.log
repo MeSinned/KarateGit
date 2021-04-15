@@ -1,0 +1,5 @@
+19:14:28.940 karate.env system property was:  
+19:14:30.529 this thread waited 1587 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+19:14:30.696 [print] ramona.harber
+19:14:30.698 [print] This is second scenario
+19:14:30.702 After Feature Text 

@@ -1,0 +1,37 @@
+19:14:28.946 karate.env system property was:  
+19:14:30.529 this thread waited 1581 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+19:14:30.552 request:
+1 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 > Connection: Keep-Alive
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+
+19:14:34.090 response time in milliseconds: 3536.51
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fbd30a6e1292c2-SJC
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 14 Apr 2021 09:14:34 GMT
+1 < ETag: W/"fed6ca896317fa279ffeea81ceaeb783"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=JBPGOAJLc8iiCWGKzP9wmM4VDgr98f1q21F0zmqgHLKRWFVcDoNafIlyKoEAiFzjcXZ03r20KK59ZuceF1S6Yv4Qd29SZGiBQmSEo%2B74VISREdK8jNinjCK4tg%3D%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d9b61f2b2e1d6433ed0a68adc7d06171b1618391671; expires=Fri, 14-May-21 09:14:31 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 5f4f21dc-80b9-44b8-a75e-6f757267c87b
+1 < X-Runtime: 2.607104
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0971423a84000092c2abbde000000001
+{"articles":[{"title":"Lady of the Leaves","slug":"lady-of-the-leaves-qqsn3z","body":"Chuck Norris can't test for equality because he has no equal.","createdAt":"2021-04-14T09:14:33.035Z","updatedAt":"2021-04-14T09:14:33.035Z","tagList":[],"description":"Lorath","author":{"username":"equifax123","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Theomore","slug":"theomore-n5ro9j","body":"Chuck Norris programs do not accept input.","createdAt":"2021-04-14T09:14:31.817Z","updatedAt":"2021-04-14T09:14:31.817Z","tagList":[],"description":"Qarth","author":{"username":"equifax123","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"akjsjdnakjdn","slug":"akjsjdnakjdn-adef5x","body":"jhbsajfksadnlfksajl","createdAt":"2021-04-14T09:04:58.258Z","updatedAt":"2021-04-14T09:04:58.258Z","tagList":["Tag"],"description":"idlsnafkasn","author":{"username":"AshutoshDumiyan","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"ajflafdf","slug":"ajflafdf-hbszno","body":"uusdafsadf\nsdafnsdf\ndsaf\nsd","createdAt":"2021-04-14T09:04:13.958Z","updatedAt":"2021-04-14T09:04:13.958Z","tagList":["Tag"],"description":"diusfnlasnflkj","author":{"username":"AshutoshDumiyan","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"asindlsfdns","slug":"asindlsfdns-6mjp86","body":"yudabfadsf\nsaf\ndasjlfsadfljdjl\nbsdb\nj\nlbajd","createdAt":"2021-04-14T09:02:37.992Z","updatedAt":"2021-04-14T09:02:37.992Z","tagList":["Tag"],"description":"kjknaslkjf\nsafksafns\naf","author":{"username":"AshutoshDumiyan","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"adbnkjas dkjs","slug":"adbnkjas-dkjs-ozis2n","body":"jnjandslanfsuaifniu\nafoidsfsdn]\nf\nsad]fnsa\nd'f]s\ndf","createdAt":"2021-04-14T09:00:51.714Z","updatedAt":"2021-04-14T09:00:51.714Z","tagList":["jnldsf","saiudfnasn"],"description":"jkdasjfbajds","author":{"username":"AshutoshDumiyan","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"asfnjksabfj","slug":"asfnjksabfj-ca9c34","body":"uahsbdkjsabdbsah","createdAt":"2021-04-14T09:00:00.970Z","updatedAt":"2021-04-14T09:00:00.970Z","tagList":["tag1","tag2"],"description":"sajd asjkbf","author":{"username":"AshutoshDumiyan","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"321","slug":"321-ww7r12","body":"312","createdAt":"2021-04-14T08:56:46.544Z","updatedAt":"2021-04-14T08:56:46.544Z","tagList":[],"description":"3312","author":{"username":"david-xxx","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":2},{"title":"article by me","slug":"article-by-me-vmt2pg","body":"-- whole content --\n\n// more content //\n\n**  some more content  **","createdAt":"2021-04-14T08:54:56.659Z","updatedAt":"2021-04-14T08:54:56.659Z","tagList":["tag1","tag2","tag3"],"description":"description by me\nanother line","author":{"username":"AshutoshDumiyan","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"3213","slug":"3213-f9u9bf","body":"321","createdAt":"2021-04-14T08:54:38.610Z","updatedAt":"2021-04-14T08:54:38.610Z","tagList":[],"description":"321","author":{"username":"david-xxx","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1}],"articlesCount":500}
+

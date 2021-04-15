@@ -1,0 +1,41 @@
+19:14:28.931 karate.env system property was:  
+19:14:30.529 this thread waited 1593 milliseconds for callSingle lock: classpath:helpers/CreateToken.feature
+19:14:30.748 request:
+1 > POST https://conduit.productionready.io/api/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTQzOTk0LCJ1c2VybmFtZSI6ImVxdWlmYXgxMjMiLCJleHAiOjE2MjM1NzU2NzB9.i25EfQJco9CjZgl4RAB-aJ0gh_kRDaH0xSTG_qWQVM4
+1 > Connection: Keep-Alive
+1 > Content-Length: 85
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: conduit.productionready.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/11.0.10)
+{"user":{"email":"ivan43@test.com","password":"equifax789","username":"marine.hahn"}}
+
+19:14:31.997 response time in milliseconds: 1247.30
+1 < 200
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 63fbd30b7853db08-KIX
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Wed, 14 Apr 2021 09:14:32 GMT
+1 < ETag: W/"755bab01dc20dc0c1b7e2540e177bebb"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Location: /
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=wInkBtBpNjv3x5yXO903BS%2BqqK7cUFiS%2BopD4eE76M4TlOc1nNNdZcdUI5E4sNMD6YUnHC%2BZF7gkTZDBP%2FzVE385%2FeuY%2FlPBAA1hYtSaehikmYpFgSBzLJgVgA%3D%3D"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d8a5aeca7bf0dca18c1ad26a5361669a51618391671; expires=Fri, 14-May-21 09:14:31 GMT; path=/; domain=.productionready.io; HttpOnly; SameSite=Lax
+1 < Status: 200 OK
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Powered-By: Phusion Passenger 4.0.60
+1 < X-Request-Id: 3843e291-0f19-4bde-a96f-50f52c410490
+1 < X-Runtime: 0.149675
+1 < X-XSS-Protection: 1; mode=block
+1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+1 < cf-request-id: 0971423b2a0000db08bd148000000001
+{"user":{"id":161273,"email":"ivan43@test.com","createdAt":"2021-04-14T09:14:31.908Z","updatedAt":"2021-04-14T09:14:31.938Z","username":"marine.hahn","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTYxMjczLCJ1c2VybmFtZSI6Im1hcmluZS5oYWhuIiwiZXhwIjoxNjIzNTc1NjcxfQ.GuGWkLpSABpK0pgK1zJ0YxCi4Wco5BOOzbg50Ms3ulA"}}
+

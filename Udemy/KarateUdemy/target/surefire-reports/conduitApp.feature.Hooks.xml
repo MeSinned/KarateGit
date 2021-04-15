@@ -1,0 +1,21 @@
+<testsuite failures="0" name="conduitApp/feature/Hooks.feature" skipped="0" tests="2" time="0.307907">
+  <testcase classname="conduitApp.feature.Hooks" name="First scenario" time="0.158405">
+    <system-out>* def result = call read('classpath:helpers/Dummy.feature') ............... passed
+* def username = result.username .......................................... passed
+* configure afterFeature = ................................................ passed
+* print username .......................................................... passed
+* print 'This is first scenario' .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="conduitApp.feature.Hooks" name="Second scenario" time="0.149502">
+    <system-out>* def result = call read('classpath:helpers/Dummy.feature') ............... passed
+* def username = result.username .......................................... passed
+* configure afterFeature = ................................................ passed
+* print username .......................................................... passed
+* print 'This is first scenario' .......................................... passed
+* def result = call read('classpath:helpers/Dummy.feature') ............... passed
+* def username = result.username .......................................... passed
+* configure afterFeature = ................................................ passed
+* print username .......................................................... passed
+* print 'This is second scenario' ......................................... passed</system-out>
+  </testcase>
+</testsuite>
